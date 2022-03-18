@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>Exercise week 2!</title>
+    </head>
+    <body>
+        <h2>Contact page</h2><br>
+        <form action="contact.html" method="post" target="_blank">
+            <label for="purpose">Purpose of contact:</label>
+            <select id="purpose" name="Purpose">
+                <option value="Business">Business</option>
+                <option value="Personal">Personal</option>
+            </select><br>
+
+            <label for="name">Enter your name:</label><br>
+            <input type="text" id="name" name="Name" size="50"><br><br>
+
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="Email"><br><br>
+
+            <label for="phone">Enter your phone number:</label><br>
+            <input type="tel" name="Phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+            <p>Choose your contact method</p>
+            <input type="radio" id="rd_email" name="radio" value="Email"> <!--should use the same name for a group of radio to selectable only one-->
+            <label for="rd_email">Email</label><br>
+
+            <input type="radio" id="rd_phone" name="radio" value="Phone"> <!--and the value must be different-->
+            <label for="rd_phone">Phone</label><br><br>
+
+            <p>Choose your contact's days:</p>
+            <input type="checkbox" id="monday" name="days[]" value="Monday"> <!--checkboc also need same name and different values-->
+            <label for="monday">Monday</label><br>
+
+            <input type="checkbox" id="tuesday" name="days[]" value="Tuesday"> <!--but need  square brackets after the name-->
+            <label for="tuesday">Tuesday</label><br>
+
+            <input type="checkbox" id="wenesday" name="days[]" value="Wenesday">
+            <label for="wenesday">Wednesday</label><br>
+
+            <input type="checkbox" id="thursday" name="days[]" value="Thursday">
+            <label for="thursday">Thursday</label><br>
+
+            <input type="checkbox" id="friday" name="days[]" value="Friday">
+            <label for="friday">Friday</label><br>
+
+            <input type="checkbox" id="saturday" name="days[]" value="Saturday">
+            <label for="saturday">Saturday</label><br>
+
+            <input type="checkbox" id="sunday" name="days[]" value="Sunday">
+            <label for="sunday">Sunday</label><br><br>
+
+            <label for="myfile">Choose your file:</label>
+            <input type="file" id="myfile" name="Myfile"><br><br>
+
+            <textarea name="Message" id="message" cols="30" rows="5"></textarea><br><br>
+
+            <input type="submit" id="sbm" value="Send">
+            <input type="reset" id="rst" value="Clear"><br><br>
+        </form>
+
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bSI6p9gV5lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>

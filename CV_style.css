@@ -1,0 +1,48 @@
+h1, h2, h3, h4 {
+    color: red;
+}
+
+h1 {
+    font-size: 45px;
+    color: hsl(0, 100%, 50%);
+}
+
+h2 {
+    font-size: 35px;
+    color: hsl(0, 100%, 60%);
+}
+
+h3 {
+    font-size: 25px;
+    color: hsl(0, 100%, 70%);
+}
+
+h4 {
+    font-size: 20px;
+    color: hsl(0, 100%, 80%);
+}
+
+nav ul li.active {
+    color: hsl(180, 100%, 50%);
+}
+
+nav ul li a:hover {
+    color: rgb(225, 0, 195);
+    background-color: aquamarine;
+}
+
+/* main p:first-of-type {
+
+} */
+
+h1 + p {
+    font-size: 20px;
+    border: 3px solid seagreen;
+}
+
+#education tr:nth-child(2n) {
+    background-color: blueviolet;
+}
+#education table tr:nth-child(2n+1) {
+    background-color:aqua;
+}
